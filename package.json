@@ -22,7 +22,9 @@
   "homepage": "https://github.com/iss4gerry/task-todo-app#readme",
   "dependencies": {
     "@prisma/client": "^5.11.0",
+    "bcrypt": "^5.1.1",
     "express": "^4.19.1",
+    "http-status": "^1.7.4",
     "nodemon": "^3.1.0",
     "prisma": "^5.11.0"
   }
