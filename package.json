@@ -1,0 +1,27 @@
+{
+  "name": "task-todo-app",
+  "version": "1.0.0",
+  "description": "make a list of tasks that must be completed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iss4gerry/task-todo-app.git"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "gerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iss4gerry/task-todo-app/issues"
+  },
+  "homepage": "https://github.com/iss4gerry/task-todo-app#readme",
+  "dependencies": {
+    "express": "^4.19.1",
+    "nodemon": "^3.1.0"
+  }
+}
