@@ -22,7 +22,40 @@ const createTag = catchAsync(async(req, res) => {
     })
 })
 
+const findTagById = catchAsync(async(req,res) => {
+    const result = await tagService.findTagById(req.params.tagId)
+
+    res.status(httpStatus.OK).send({
+        status: httpStatus.OK,
+        message: 'Find tag by ID success!',
+        data: result
+    })
+})
+
+const deleteTag = catchAsync(async(req, res) => {
+    const result = await tagService.deleteTag(req.params.tagId)
+
+    res.status(httpStatus.OK).send({
+        status: httpStatus.OK,
+        message: 'Delete tag success!',
+        data: result
+    })
+})
+
+const updateTag = catchAsync(async(req, res) => {
+    const result = await tagService.updateTag(req.body, req.params.tagId)
+
+    res.status(httpStatus.OK).send({
+        status: httpStatus.OK,
+        message: 'Update tag success!',
+        data: result
+    })
+})
+
 module.exports = { 
     getAllTag,
-    createTag
+    createTag,
+    findTagById,
+    deleteTag,
+    updateTag
 }
