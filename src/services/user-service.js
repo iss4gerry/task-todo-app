@@ -3,18 +3,23 @@ const prisma = require('../../prisma/client')
 
 const createUser = async (userBody) => {
     userBody.password = bcrypt.hashSync(userBody.password, 8)
-    return prisma.user.create({
+    return await prisma.user.create({
         data: userBody
     })
 }
 
 const getUserByEmail = async (email) => {
-    return prisma.user.findUnique({
+    return await prisma.user.findUnique({
         where: { email }
     })
 }
 
+const getAllUsers = async () => {
+    return await prisma.user.findMany()
+}
+
 module.exports = {
     createUser,
-    getUserByEmail
+    getUserByEmail,
+    getAllUsers
 }

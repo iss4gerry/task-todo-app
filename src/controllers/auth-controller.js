@@ -18,7 +18,18 @@ const login = catchAsync(async (req, res) => {
     const user = await authService.userLogin(email, password)
     res.status(httpStatus.OK).send({user})
 })
+
+const getAllUsers = catchAsync(async (req, res) => {
+    const result = await userService.getAllUsers()
+
+    res.status(httpStatus.OK).send({
+        status: httpStatus.OK,
+        message: 'Success',
+        data: result
+    })
+})
 module.exports = { 
     register,
-    login
+    login,
+    getAllUsers
 }
