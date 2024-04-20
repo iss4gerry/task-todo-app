@@ -18,7 +18,7 @@ const createTag = async (tagBody) => {
 
 const findTagById = async (tagId) => {
     const result = await prisma.tag.findFirst({
-        where: { id: tagId }
+        where: { id: tagId },
     })
 
     if(!result){

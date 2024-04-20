@@ -16,5 +16,4 @@ const userLogin = async (email, password) => {
   return user;
 }
 
-
 module.exports = { userLogin }
