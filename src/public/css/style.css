@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.body {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0px 10px;
+    background-color: white ;
+    border-style: ;
+}
+.header h1{
+    color: blue;
+}
+
+/* Form Search */
+.form-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 10px;
+  width: 500px;
+  height: auto;
+  border-style: ;  
+}
+.search-input {
+  width: 80%;
+  height: 60%;
+  font-size: 16px;
+  border-radius: 7px;
+}
+.search-submit {
+  width: 20%;
+  height: 60%;
+  border-radius: 7px;
+}
+.search-submit:hover {
+  background-color: #0056b3;
+  color: #f2f2f2;
+}
+
+/* Menu Profil Akun dan Tema */
+.two-menu {
+  display: flex;
+  width: ;
+  gap: 0px 10px;
+  border-style: ;
+}
