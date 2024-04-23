@@ -10,8 +10,8 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req, res) => {
-    res.render('./views')
+app.get('/about', (req, res) => {
+    res.send('todoli apps')
 })
 
 app.use('/api', router)
